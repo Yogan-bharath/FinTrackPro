@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="login-register">
+            <form class="register">
+                <h3>Create Account</h3>
+                <p>Join FinTrack Pro</p>
+                <div class="user-name">
+                    <label for="user-name">Choose a Username</label>
+                    <input name="Username" type="text" id="user-name" required>
+                </div>
+                <div class="user-password">
+                    <label for="user-password">Password</label>
+                    <input name="Password" type="password" id="user-password" required>
+                </div>
+                <button type="submit" class="register-btn">
+                    Register
+                </button>
+                <p>Already have an account? <span class="goToLogin">Login here</span></p>
+            </form>  
+            <form class="login">
+                <h3>Welcome Back</h3>
+                <p>Login to FinTrack Pro</p>
+                <div class="userName">
+                    <label for="userName">Username</label>
+                    <input type="text" id="userName" required>
+                </div>
+                <div class="Password">
+                    <label for="Password">Password</label>
+                    <input type="text" id="Password" required>
+                </div>
+                <button class="login-btn">
+                    Login
+                </button>
+                <p>Don't have an account? <span class="goToRegister">Register here</span></p>
+            </form>  
+    </section>
+    <main>
+        <nav>
+            <div class="logo">
+                <i class="ri-stack-fill"></i>
+                <div class="logo-name">
+                    <h3>
+                        FinTrack Pro
+                    </h3>
+                    <p>Enterprise Finance</p>
+                </div>
+            </div>
+
+            <div class="pages">
+                <div class="dashboard active">
+                    <i class="ri-layout-grid-line"></i>
+                    Dashboard
+                </div>
+                <div class="settings">
+                    <i class="ri-settings-3-fill"></i>
+                    Settings
+                </div>
+            </div>
+
+            <button class="add-tran">
+                <i class="ri-add-fill"></i>
+                <p>Add Transaction</p>
+            </button>
+        </nav>
+        
+        <section class="overLay none">
+                <form class="new-tran">
+                    <div class="form-head">
+                        <h3>Add Transaction</h3>
+                        <i class="ri-close-line"></i>
+                    </div>
+                    <div class="form-type flex flex-col gap">
+                        <label for="type">Type</label>
+                        <select name="type" id="type">
+                            <option value="expense">Expense</option>
+                            <option value="income">Income</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap">
+                        <label for="des">Description</label>
+                        <input type="text" name="des" id="des" placeholder="e.g Amazon, Salary, Coffee">
+                    </div>
+
+                    <div class="date flex gap">
+                        <div class="flex flex-col gap">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount">
+                        </div>
+                        <div class="flex flex-col gap">
+                            <label for="date">Amount</label>
+                            <input type="date" id="date">
+                        </div>
+                    </div>
+
+                    <div class="selection-cat flex flex-col gap">
+                        <label for="Category">Category</label>
+                        <select name="Category" id="Category">
+                <option value="">Select a Category</option>
+                <option value="Food & Dining">Food & Dining</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Recharge & bills">Recharge & bills</option>
+                <option value="Petrol & Auto">Petrol & Auto</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Salary">Salary</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Others">Others</option>
+                        </select>
+                    </div>
+
+                    <button class="Add">
+                        Save Transaction
+                    </button>
+                </form>
+        </section>
+
+
+
+        <div class="top-nav">
+
+            <div class="user-info">
+                <h3>yoganbharath</h3>
+                <button class="log-out">
+                    <i class="ri-logout-box-r-line"></i>
+                    <p>Log out</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="financial-overview">
+            <div class="title">
+                <h3>Financial Overview</h3>
+                <p>Real-time tracking application</p>
+            </div>
+
+            <div class="status">
+                <div class="state">
+                    <i class="ri-bank-fill card-style"></i>
+                    <div class="amount">
+                        <p>Current Balance</p>
+                        <h3 class="Current_Balance"><span class="currency">$</span>0</h3>
+                    </div>
+                </div>
+                <div class="state">
+                    <i class="ri-arrow-right-up-long-line card-style"></i>
+                    <div class="amount">
+                        <p>Total Income</p>
+                        <h3 class="green 
+Total_Income"><span class="currency">$</span>0</h3>
+                    </div>
+                </div>
+                <div class="state">
+                    <i class="ri-arrow-right-down-long-line card-style"></i>
+                    <div class="amount">
+                        <p>Total Expense</p>
+                        <h3 class="red Total_Expense"><span class="currency">$</span>0</h3>
+                    </div>
+                </div>
+                <div class="state">
+                    <i class="ri-database-2-fill card-style"></i>
+                    <div class="amount">
+                        <p>Total Transactionse</p>
+                        <h3 class="Total_Transactions"><span class="currency">$</span>0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-stats">
+                <div class="display-left">
+                    <div class="graph">
+                        <h3>Cash Flow Analysis</h3>
+                        <div class="cash-flow-chat">
+
+                        </div>
+
+                    </div>
+
+                    <div class="all-trans">
+                        <h3>All Transactions</h3>
+                        
+                        <div class="filter">
+                            <div class="search">   
+                                <i class="ri-search-line"></i>
+                                <input type="text" placeholder="Search Transactions...">
+                            </div>
+
+                            <select name="cat" id="cat" class="income-type">
+                                <option value="all">All Types</option>
+                                <option value="income">Income Only</option>
+                                <option value="expense">Expense Only</option>
+                            </select>
+                        </div>
+
+                        <table class="table">
+                            <tr>
+                                <th>DATE</th>
+                                <th>DESCRIPTION</th>
+                                <th>CATEGORY</th>
+                                <th>AMOUNT</th>
+                                <th>ACTIONS</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="display-right">
+                    <h3>Preferences</h3>
+                    <div class="theme-toggle">
+                        <p>Dark Mode</p>
+                        <div class="toggle-btn">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="delete-all">
+                        <i class="ri-delete-bin-7-fill"></i>
+                        <p>Reset All Data</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="setting">
+            <div class="head-settings">
+                <h3>Settings</h3>
+                <p>Manage your account profile and app formatting.</p>
+            </div>
+
+            <div class="currency-seletion">
+                <h3>Profile Details</h3>
+                <div class="details">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div>
+                        <label for="prime-currency">Primary Currency</label>
+                        <select name="prime-currency" id="prime-currency">
+                            <option value="inr">INR (₹)</option>
+                            <option value="usd">USD ($)</option>
+                            <option value="eur">EUR (€)</option>
+                            <option value="jpy">JPY (¥)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="save-curr">
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
