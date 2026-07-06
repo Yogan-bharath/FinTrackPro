@@ -563,7 +563,7 @@ tr td.actions i{
 .gap{
     gap: .5rem;
 }
-form input{
+form .input{
     padding: .5rem;
     background-color: var(--bg);
     border-radius: 10px;
